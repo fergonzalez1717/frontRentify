@@ -1,0 +1,65 @@
+/* general para el cuerpo */
+body {
+    
+    background-color: #f4f7fc; 
+    font-family: 'Arial', sans-serif; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* centrado */
+    margin: 0;
+    background-image: url(imagenlogo/Diseño\ sin\ título\ \(6\).png);
+    background-size: cover; /* Para que cubra toda la pantalla */
+    background-position: center; /* Centra la imagen */
+}
+
+/* Contenedor del formulario */
+form {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px; /* da el tamaño máximo para el formulario */
+}
+
+/* Estilo para los campos de texto de us y cont */
+input[type="text"],
+input[type="password"] {
+    width: 100%; /* Hace que los campos ocupen todo el ancho del contenedor */
+    padding: 12px; /* Añade espacio dentro de los campos */
+    margin: 0 auto; /* Asegura que el campo esté centrado en el formulario */
+    border: 1px solid #ccc; /* Borde suave y gris claro */
+    border-radius: 8px; /* Bordes redondeados */
+    box-sizing: border-box; /* Incluye el padding y border en el tamaño total */
+    font-family: 'Courier New', Courier, monospace; /* Fuente personalizada */
+    font-size: 16px; /* Tamaño de la fuente */
+}
+
+/* Título */
+h2 {
+    text-align: center;
+    font-size: 30px ;
+    color: rgb(5, 100, 69);
+    margin-bottom: 30px;
+    font-family: Tahoma, Geneva, sans-serif;
+}
+
+/* Mensajes de error */
+.mensajeError {
+    color: #cf0f0f;
+    font-size: 12px;
+    display: none; /* Se muestra solo cuando hay un error */
+}
+
+/* Estilo para el botón de "Ingresar" */
+button {
+    background-color: #007bff; /* Azul de Bootstrap */
+    color: white;
+    padding: 12px;
+    width: 100%;
+    border: none;   /*sin bordes predeterminados*/
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;   /*pointer cambia el cursor a una mano*/
+}

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="estiloInicio.css">
+    <title>INICIO</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">  <!-- navbar con botones importantes -->
+     <div class="container-fluid">
+     <a class="navbar-brand" href="login.html">Inicia Sesión</a>
+     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+     </button>
+     <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Nosotros</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contactanos</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            MENU
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">hazte una cuenta</a></li>
+            <li><a class="dropdown-item" href="#">Busco Casa</a></li>
+            <li><a class="dropdown-item" href="#">Busco Departamento</a></li>
+          </ul>
+        </li>
+      </ul>
+     </div>
+     </div>
+    </nav>
+
+    <br>
+    <br>
+
+    <!-- carrusel con 3 fotos -->
+    <div id="carouselExampleIndicators" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="imagenlogo/www.rentifychile.com.png" class="d-block w-100" alt="imagen rentify">
+    </div>
+    <div class="carousel-item">
+      <img src="https://www.conavicoop.cl/wp-content/uploads/2025/09/pluna_banner_in1.jpg" class="d-block w-100" alt="imagen 2">
+    </div>
+    <div class="carousel-item">
+      <img src="https://largroup.cl/wp-content/uploads/2025/08/BANNER-WEB_NATIVO-1108.png" class="d-block w-100" alt="imagen3">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+  </div>
+ 
+  <br>
+  <br>
+
+
+  <!-- buscador con filtros -->
+ <form class="row g-3 justify-content-center">
+  <div class="col-md-3">
+    <select class="form-select">
+      <option selected>Tipo de propiedad</option>
+      <option>Departamento</option>
+      <option>Casa</option>
+      <option>Parcela</option>
+    </select>
+  </div>
+  <div class="col-md-3">
+    <input type="text" class="form-control" placeholder="Ciudad o comuna">
+  </div>
+  <div class="col-md-2">
+    <input type="number" class="form-control" placeholder="Precio mínimo">
+  </div>
+  <div class="col-md-2">
+    <input type="number" class="form-control" placeholder="Precio máximo">
+  </div>
+  <div class="col-md-2 d-grid">
+    <button type="submit" class="btn btn-primary">Buscar</button>
+  </div>
+ </form>
+
+  <!-- Beneficios de la plataforma buscado en layout/grid -->
+<section class="py-5">
+  <div class="container text-center">
+    <h2 class="mb-4">¿Por qué arrendar con nosotros?</h2>
+    <div class="row g-4">
+
+      <div class="col-md-3">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body">
+            <div class="mb-3 fs-1 text-primary">💸</div>
+            <h5 class="card-title">Sin comisiones</h5>
+            <p class="card-text">Trato directo con el dueño, sin pagar extras a corredores.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body">
+            <div class="mb-3 fs-1 text-success">⚡</div>
+            <h5 class="card-title">Rápido y fácil</h5>
+            <p class="card-text">Encuentra tu arriendo en minutos con filtros simples.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body">
+            <div class="mb-3 fs-1 text-warning">🏠</div>
+            <h5 class="card-title">Variedad</h5>
+            <p class="card-text">Casas, departamentos y piezas en distintas comunas.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body">
+            <div class="mb-3 fs-1 text-danger">🛡️</div>
+            <h5 class="card-title">Seguro</h5>
+            <p class="card-text">Propiedades verificadas y dueños confiables.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+  <footer> <!-- pie de pagina -->
+
+    <button type="button" class="btn btn-secondary">Siguenos en redes</button>
+    <button type="button" class="btn btn-secondary">Quiero </button>
+  
+  </footer>
+
+
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
