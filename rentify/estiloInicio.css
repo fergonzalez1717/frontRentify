@@ -57,3 +57,32 @@ footer {
   transform: translateY(-5px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
+
+.logo { /* estilo para el logo de nosotros */
+    display: block;
+    margin: 0 auto;   /* centra horizontalmente */
+    width: 200px;     /* tamaño fijo, cambia si quieres */
+    max-width: 100%;  /* se adapta a móviles */
+}
+
+/* Estilo del párrafo de descripción */
+.descripcion {
+    text-align: justify; /* texto justificado */
+    margin-top: 20px;    /* espacio sobre el párrafo */
+    font-size: 16px;     /* tamaño de letra */
+    line-height: 1.5;    /* altura de línea para mejor lectura */
+    color: rgb(5, 100, 69) ;
+    font-family: "Georgia", "Times New Roman", Times, serif; 
+    font-style: italic;    /* hace que el texto sea cursivo */
+}
+
+.cuadro {
+    border: 2px solid #0a6442;   /* borde del cuadro */
+    border-radius: 10px;       /* esquinas redondeadas */
+    padding: 20px;             /* espacio interno */
+    margin: 20px auto;            /* separación entre cuadros */
+    width: 80%;          /* ocupa solo el 80% del contenedor */
+    background-color: #f9f9f9; /* color de fondo suave */
+    font-family: "Georgia", "Times New Roman", Times, serif;
+    font-style: italic;
+}
