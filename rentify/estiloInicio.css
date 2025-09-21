@@ -1,6 +1,22 @@
 .bg-body-tertiary {
     background-color: rgb(5, 100, 69) !important;
 }
+.valoraciones {
+    border-radius: 15px;       /* esquinas redondeadas */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);  /* sombra suave */
+    background-color: #ffffff;  /* fondo blanco elegante */
+    transition: transform 0.3s; /* efecto al pasar el mouse */
+}
+
+.tarjeta-valoracion:hover {
+    transform: translateY(-5px); /* se eleva al pasar el mouse */
+}
+
+.estrellas {
+    color: gold;         /* estrellas doradas */
+    font-size: 18px;
+    margin-bottom: 10px;
+}
 
 .navbar a {
   color: white;
