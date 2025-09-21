@@ -3,14 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="estiloInicio.css">
+        <title>Document</title>
 </head>
 <body>
-            <nav class="navbar bg-body-tertiary">
+   <nav class="navbar bg-body-tertiary">
   <div class="container-fluid">
     <a class="navbar-brand" href="inicio.html">Volever al inicio</a>
    </div>
    </nav>
+   
+    <div class="container mt-5 text-center">
+     <img src="imagenlogo/logorenty.png" class="logo" alt="imagen rentify">
+      <p class="descripcion">
+            Con Rentify arrendar es sencillo, directo y sin comisiones.
+       </p>
+    </div>
+
+  <br>
+  <br>
+
+
+   <div class="container mt-4">
+   <div class="row">   <!-- organiza 3 tarjetas x fila -->
+    <div class="col-md-4 mb-4">
+  <div class="visitados card h-100 text-center">
+  <img src="https://images.adsttc.com/media/images/5e7b/82d0/b357/65c3/7900/0171/large_jpg/VIA_Image_by_Iwan_Baan_11_original.jpg?1585152713" class="card-img-top" alt="Santiago Centro"
+   data-bs-toggle="modal" data-bs-target="#modal1" style="cursor: pointer;">
+  <div class="card-body">
+    <h5 class="card-title">Santiago Centro</h5>
+    <p class="card-text">2 Dormitorios, 1 Baño</p>
+  </div>
+  </div>
+   </div>
+
+
+      <div class="col-md-4 mb-4">
+   <div class="visitados card h-100 text-center">
+  <img src="https://imgclasificados3.emol.com/Proyectos/imagenes//PR_FOTO_4566_1.jpg" class="card-img-top" alt="las condes"
+  data-bs-toggle="modal" data-bs-target="#modal2" style="cursor: pointer;">
+  <div class="card-body">
+    <h5 class="card-title">Las Condes</h5>
+    <p class="card-text">3 dormitorios, 1 baño</p>
+  </div>
+  </div>
+  </div>
+  
+    <!-- Modal para que la imagen abra informacion-->
+ <!-- Modal 1 -->
+<div class="modal fade" id="modal1" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Santiago Centro</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+      <!--agregamos row con columnas para desplegar mas imágenes -->
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <img src="https://images.adsttc.com/media/images/5e7b/82d0/b357/65c3/7900/0171/large_jpg/VIA_Image_by_Iwan_Baan_11_original.jpg?1585152713" 
+                 class="img-fluid modal-img" alt="Foto 1">
+          </div>
+          <div class="col-md-4 mb-3">
+            <img src="https://cf.chilepropiedades.cl/imagenes/publicacion/venta/departamento/santiago/2/bb684552e1924833a337e821bbc28e00.jpeg" 
+                 class="img-fluid modal-img" alt="Foto 2">
+          </div>
+                    <div class="col-md-4 mb-3">
+            <img src="https://http2.mlstatic.com/D_NQ_NP_2X_724832-MLC91029254931_082025-N-uf20-arriendo-amplio-departamento-pocuro-holanda-esta.webp" 
+                 class="img-fluid modal-img"  alt="Foto 3">
+          </div>
+
+        </div>
+        <p>Moderno departamento ubicado en pleno corazón de Santiago, cercano a metro, comercio y servicios. 
+          Cuenta con 2 dormitorios luminosos, 1 baño completo, living-comedor integrado y cocina americana equipada.
+           Ideal para quienes buscan conectividad y comodidad en un espacio práctico y bien distribuido. 
+           Edificio con seguridad 24/7, gimnasio y áreas comunes.</p>
+        <a class="btn btn-primary" href="formadopt.html">Quiero Arrendar</a>
+      </div>
+    </div>
+  </div>
+</div>  
+
+ <!-- Modal 2 -->
+<div class="modal fade" id="modal2" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Las Condes</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+      <!--agregamos row con columnas para desplegar mas imágenes -->
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <img src="https://http2.mlstatic.com/D_NQ_NP_631597-MLC87980077053_072025-O-buena-vista-venta-depto-las-condes-2h.webp" 
+                 class="img-fluid modal-img" alt="Foto 1">
+          </div>
+          <div class="col-md-4 mb-3">
+            <img src="https://www.portalpm.cl/wp-content/uploads/2023/09/Edificio-Crusoe-1115_759X540-01.jpg" 
+                 class="img-fluid modal-img" alt="Foto 2">
+          </div>
+                    <div class="col-md-4 mb-3">
+            <img src="https://lacasadejuana.cl/wp-content/uploads/2025/05/02.Warren-Smith_-3640-web.jpg" 
+                 class="img-fluid modal-img"  alt="Foto 3">
+          </div>
+
+        </div>
+        <p>Elegante departamento en Las Condes, con excelente ubicación y entorno residencial. Dispone de tres dormitorios cómodos y 
+            luminosos, principal en suite, dos baños, amplia cocina equipada y un living comedor con salida a una terraza ideal para 
+            disfrutar del aire libre. El edificio cuenta con seguridad 24/7, estacionamiento y áreas comunes. Cercano a colegios, 
+            supermercados, parques y con muy buena conectividad a vías principales.</p>
+        <a class="btn btn-primary" href="formadopt.html">Quiero Arrendar</a>
+      </div>
+    </div>
+  </div>
+</div>  
+
 
    
 
@@ -35,5 +145,7 @@
 
 
           <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    
 </body>
 </html>
