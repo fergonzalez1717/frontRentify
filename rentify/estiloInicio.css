@@ -102,3 +102,14 @@ footer {
     font-family: "Georgia", "Times New Roman", Times, serif;
     font-style: italic;
 }
+
+.valoraciones img {
+  height: 300px;       /* Ajusta a la altura que quieras */
+  width: 100%;         /* Para que ocupe todo el ancho de la tarjeta */
+  object-fit: cover;   /* Recorta la imagen manteniendo proporciones */
+  display: block;      /* Asegura que se centre correctamente */
+}
+
+.valoraciones {
+  margin: 20px; /* Ajusta la separación a tu gusto */
+}
