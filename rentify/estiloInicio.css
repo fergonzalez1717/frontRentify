@@ -6,6 +6,7 @@
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);  /* sombra suave */
     background-color: #ffffff;  /* fondo blanco elegante */
     transition: transform 0.3s; /* efecto al pasar el mouse */
+    margin: 20px; /* Ajusta la separación a tu gusto */
 }
 
 .tarjeta-valoracion:hover {
@@ -110,6 +111,24 @@ footer {
   display: block;      /* Asegura que se centre correctamente */
 }
 
-.valoraciones {
-  margin: 20px; /* Ajusta la separación a tu gusto */
+.visitados {
+    border-radius: 15px;       /* esquinas redondeadas */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);  /* sombra suave */
+    background-color: #ffffff;  /* fondo blanco elegante */
+    transition: transform 0.3s; /* efecto al pasar el mouse */
+    margin: 20px; /* Ajusta la separación a tu gusto */
+}
+
+.visitados img {
+  height: 250px;       /* altura fija */
+  width: 100%;         /* que ocupe todo el ancho de la tarjeta */
+  object-fit: cover;   /* recorta la imagen sin deformar */
+  display: block;
+}
+
+.modal-img {
+  height: 200px;        /* altura uniforme */
+  width: 100%;          /* ocupa toda la columna */
+  object-fit: cover;    /* recorta proporcionalmente sin deformar */
+  border-radius: 0.5rem; /* esquinas redondeadas */
 }

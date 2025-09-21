@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="estililoInicio.css">
+    <link rel="stylesheet" href="estiloInicio.css">
     <title>Document</title>
 </head>
 <body>
@@ -36,6 +36,187 @@
  </nav>
   </div> <!-- cierra container-fluid -->
  </nav>
+
+  <div style="text-align: center; margin-top: 50px;">
+    <h1>¡Bienvenido, Usuario!</h1>
+    <p>Has iniciado sesión correctamente.</p>
+  </div>
+
+    <!-- buscador con filtros -->
+ <form class="row g-3 justify-content-center">
+  <div class="col-md-3">
+    <select class="form-select">
+      <option selected>Tipo de propiedad</option>
+      <option>Departamento</option>
+      <option>Casa</option>
+      <option>Parcela</option>
+    </select>
+  </div>
+  <div class="col-md-3">
+    <input type="text" class="form-control" placeholder="Ciudad o comuna">
+  </div>
+  <div class="col-md-2">
+    <input type="number" class="form-control" placeholder="Precio mínimo">
+  </div>
+  <div class="col-md-2">
+    <input type="number" class="form-control" placeholder="Precio máximo">
+  </div>
+  <div class="col-md-2 d-grid">
+    <button type="submit" class="btn btn-primary">Buscar</button>
+  </div>
+ </form>
+
+   <div style="text-align: center; margin-top: 50px;">
+    <h1>Lo mas visitado</h1>
+    <p>este mes</p>
+  </div>
+
+  <div class="row justify-content-center">
+    <div class="col-md-4 mb-4">
+  <div class="visitados card h-100 text-center">
+  <img src="https://images.adsttc.com/media/images/5e7b/82d0/b357/65c3/7900/0171/large_jpg/VIA_Image_by_Iwan_Baan_11_original.jpg?1585152713" class="card-img-top" alt="Santiago Centro"
+   data-bs-toggle="modal" data-bs-target="#modal1" style="cursor: pointer;">
+  <div class="card-body">
+    <h5 class="card-title">Santiago Centro</h5>
+    <p class="card-text">301 personas han visto </p>
+    <p class="card-text">2 Dormitorios, 1 Baño</p>
+  </div>
+  </div>
+  </div>
+
+  <div class="col-md-4 mb-4">
+  <div class="visitados card h-100 text-center">
+  <img src="https://i.pinimg.com/736x/11/36/35/1136356c55061ebbe1022b5d1201da9c.jpg" class="card-img-top" alt="Renca"
+   data-bs-toggle="modal" data-bs-target="#modal2" style="cursor: pointer;">
+  <div class="card-body">
+    <h5 class="card-title">Renca</h5>
+    <p class="card-text">217 personas han visto </p>
+    <p class="card-text">3 dormitorios, 2 pisos.</p>
+  </div>
+  </div>
+  </div>
+  
+   <div class="col-md-4 mb-4">
+   <div class="visitados card h-100 text-center">
+  <img src="https://www.toppropiedades.cl/imagenes/big_c72u263co8882c2.jpg" class="card-img-top" alt="Valle lo campino"
+  data-bs-toggle="modal" data-bs-target="#modal3" style="cursor: pointer;">
+  <div class="card-body">
+    <h5 class="card-title">Valle Lo campino</h5>
+    <p class="card-text">308 personas lo han visto </p>
+    <p class="card-text">2 pisos, piscina</p>
+  </div>
+  </div>
+  </div>
+  </div>
+  
+</div>
+  <!-- Modal para que la imagen abra informacion-->
+ <!-- Modal 1 -->
+<div class="modal fade" id="modal1" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Santiago Centro</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+      <!--agregamos row con columnas para desplegar mas imágenes -->
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <img src="https://images.adsttc.com/media/images/5e7b/82d0/b357/65c3/7900/0171/large_jpg/VIA_Image_by_Iwan_Baan_11_original.jpg?1585152713" 
+                 class="img-fluid modal-img" alt="Foto 1">
+          </div>
+          <div class="col-md-4 mb-3">
+            <img src="https://cf.chilepropiedades.cl/imagenes/publicacion/venta/departamento/santiago/2/bb684552e1924833a337e821bbc28e00.jpeg" 
+                 class="img-fluid modal-img" alt="Foto 2">
+          </div>
+                    <div class="col-md-4 mb-3">
+            <img src="https://http2.mlstatic.com/D_NQ_NP_2X_724832-MLC91029254931_082025-N-uf20-arriendo-amplio-departamento-pocuro-holanda-esta.webp" 
+                 class="img-fluid modal-img"  alt="Foto 3">
+          </div>
+
+        </div>
+        <p>Moderno departamento ubicado en pleno corazón de Santiago, cercano a metro, comercio y servicios. 
+          Cuenta con 2 dormitorios luminosos, 1 baño completo, living-comedor integrado y cocina americana equipada.
+           Ideal para quienes buscan conectividad y comodidad en un espacio práctico y bien distribuido. 
+           Edificio con seguridad 24/7, gimnasio y áreas comunes.</p>
+        <a class="btn btn-primary" href="formadopt.html">Quiero Arrendar</a>
+      </div>
+    </div>
+  </div>
+</div>  
+
+<!-- Modal 2 -->
+<div class="modal fade" id="modal2" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Renca</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+          <div class="row">
+          <div class="col-md-4 mb-3">
+        <img src="https://i.pinimg.com/736x/11/36/35/1136356c55061ebbe1022b5d1201da9c.jpg" 
+        class="img-fluid modal-img" alt="Foto 1">
+      </div>
+
+      <div class="col-md-4 mb-3">
+        <img src="https://imgcl.waa2.com/home/180424/casa-en-arriendo-en-renca-2-dormitorios-1-bao-corredores-premium-chile-spa-38cf192cb062d15d83447e2c090b1480_thumb.jpg" 
+         class="img-fluid modal-img" alt="Foto 2">
+       </div>
+
+       <div class="col-md-4 mb-3">
+        <img src="https://cf.chilepropiedades.cl/imagenes/publicacion/arriendo-mensual/casa/renca/1/48182320943c48ed8ee0a20da005ed6a.jpeg" 
+        class="img-fluid modal-img" alt="Foto 3">
+      </div>
+       </div>
+        <p>Acogedora casa de dos pisos en un sector tranquilo de Renca. En el primer nivel encontrarás living comedor, cocina independiente y baño de visitas;
+           en el segundo piso, 3 dormitorios cómodos y baño familiar. Con patio trasero ideal para reuniones y espacio para estacionar. 
+           Perfecta para una familia que quiere crecer en un ambiente seguro y bien ubicado.</p>
+        <a class="btn btn-primary" href="formadopt.html">Quiero Arrendar</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 3 -->
+<div class="modal fade" id="modal3" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Valle Lo Campino</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <div class="row">
+        <div class="col-md-4 mb-3">
+        <img src="https://www.toppropiedades.cl/imagenes/big_c72u263co8882c2.jpg"
+         class="img-fluid modal-img" alt="Foto 1">
+      </div>
+
+      <div class="col-md-4 mb-3">
+        <img src="https://img.trovit.com/eyJidWNrZXQiOiJwcmQtbGlmdWxsY29ubmVjdC1iYWNrZW5kLWIyYi1pbWFnZXMiLCJrZXkiOiJwcm9wZXJ0aWVzLzAxOTkzNDQ4LTEwNzUtNzJhYi04ODg2LTdmNGYzYWRkZThkZi8wMTk5MzQ0OS1hMjIzLTcxZWUtOGY3NC1iYjY3OGQzNGI3YzEuanBnIiwiYnJhbmQiOiJ0cm92aXQiLCJlZGl0cyI6eyJyb3RhdGUiOm51bGwsInJlc2l6ZSI6eyJ3aWR0aCI6MzYwLCJoZWlnaHQiOjI3MCwiZml0IjoiY292ZXIifX19" 
+         class="img-fluid modal-img" alt="Foto 2">
+      </div>
+
+     <div class="col-md-4 mb-3">
+      <img src="https://http2.mlstatic.com/D_NQ_NP_2X_893660-MLC82301486310_022025-N-casa-en-condominio-privado-casa-grande-con-piscina-y-terraza.webp" 
+       class="img-fluid modal-img" alt="Foto 3">
+      </div>
+    </div> 
+        <p>Hermosa casa de dos pisos en el exclusivo barrio Valle Lo Campino. Primer nivel con amplio living-comedor, cocina amoblada y baño de visitas; 
+          segundo piso con 3 dormitorios y 2 baños, incluyendo dormitorio principal en suite. Destaca su patio con piscina privada, terraza y quincho para
+           disfrutar en familia y con amigos. Sector residencial consolidado, cercano a colegios, supermercados y autopistas.</p>
+        <a class="btn btn-primary" href="formadopt.html">Quiero Arrendar</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
     
 
 
