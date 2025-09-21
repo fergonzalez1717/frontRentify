@@ -84,7 +84,7 @@ footer {
 
 /* Estilo del párrafo de descripción */
 .descripcion {
-    text-align: justify; /* texto justificado */
+    text-align: center; /* texto justificado */
     margin-top: 20px;    /* espacio sobre el párrafo */
     font-size: 16px;     /* tamaño de letra */
     line-height: 1.5;    /* altura de línea para mejor lectura */
