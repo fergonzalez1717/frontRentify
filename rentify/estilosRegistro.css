@@ -1,6 +1,8 @@
 body {
-  background: linear-gradient(135deg, #4facfe, #00f2fe);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url(imagenlogo/Diseño\ sin\ título\ \(6\).png);
+    background-size: cover; /* Para que cubra toda la pantalla */
+    background-position: center; /* Centra la imagen */
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .card {
