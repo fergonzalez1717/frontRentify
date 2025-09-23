@@ -16,7 +16,7 @@
           <a class="nav-link active" aria-current="page" href="nosotros.html">Nosotros</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contactanos</a>
+        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#contactoModal">Contáctanos</a> <!-- abrira una pantalla emergente -->
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -177,6 +177,48 @@
 </div>
 
 
+<!-- Modal con pantalla emergente para el contactanos-->
+<div class="modal fade" id="contactoModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      
+      <div class="modal-header">
+        <h5 class="modal-title" id="contactoModalLabel">Formulario de Contacto</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      
+      <div class="modal-body">
+        <form id="formContacto" class="needs-validation" novalidate>
+          <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="nombre" required>
+            <div class="invalid-feedback">Ingresa tu nombre.</div>
+          </div>
+
+          <div class="mb-3">
+            <label for="correo" class="form-label">Correo</label>
+            <input type="email" class="form-control" id="correo" required>
+            <div class="invalid-feedback">Ingresa un correo válido.</div>
+          </div>
+
+          <div class="mb-3">
+            <label for="mensaje" class="form-label">Mensaje</label>
+            <textarea class="form-control" id="mensaje" rows="3" required></textarea>
+            <div class="invalid-feedback">Escribe tu mensaje.</div>
+          </div>
+
+          <div class="text-center">
+            <button type="button" id="btnEnviar" class="btn btn-primary px-5">Enviar</button>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
    <!-- pie de pagina -->
   <footer style="background-color: #333; color: white; padding: 20px; text-align: center;">
   <p>Síguenos en nuestras Redes Sociales:</p>
@@ -186,6 +228,8 @@
 
   </footer>
 
+          
+           <script src="contacto.js" defer></script>
 
           <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
