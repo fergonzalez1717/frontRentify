@@ -83,8 +83,7 @@ function validar() {
   }
 }
 
-// Función error
 function mostrarMensajeError(claseInput, mensaje) {
-  let elemento = document.querySelector(.${claseInput});
+  let elemento = document.querySelector(`.${claseInput}`);
   elemento.lastElementChild.innerHTML = mensaje;
 }
